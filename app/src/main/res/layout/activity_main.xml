@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:orientation="vertical">
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="@string/name"
+              android:textAlignment="center" style="@style/NameStyle"/>
+
+    <ImageView android:layout_width="30sp"
+               android:id="@+id/imageView1"
+               android:layout_gravity="center"
+               android:src="@drawable/user_photo"
+               android:layout_height="@dimen/imageView1_height"
+               android:layout_marginTop="@dimen/imageView1_margin_top"
+               android:contentDescription="@string/imagView1"/>
+
+    <ScrollView android:layout_width="match_parent"
+                android:id="@+id/scrollView"
+                android:layout_height="match_parent">
+
+        <TextView android:layout_width="match_parent"
+                  style="@style/NameStyle"
+                  android:paddingLeft="16sp"
+                  android:paddingRight="16sp"
+                  android:lineSpacingMultiplier="1.2"
+                  android:text="@string/bio"
+                  android:layout_height="wrap_content"/>
+
+    </ScrollView>
+
+</LinearLayout>
